@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_stock/pages/quizPage.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({super.key});
@@ -24,7 +25,12 @@ class _StartPageState extends State<StartPage> {
             style: TextStyle(color: Colors.white, fontSize: 25),
           ),
         ),
-        ElevatedButton(onPressed: () {}, child: Text("starting amazing way"))
+        ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Quiz()));
+            },
+            child: Text("starting amazing way"))
       ],
     ));
   }

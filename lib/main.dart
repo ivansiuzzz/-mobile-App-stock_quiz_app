@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.amber,
           appBar: AppBar(
             title: Text(
-              "Learning Option is important",
+              "Learning Stock is important",
               style: TextStyle(color: Colors.white),
             ),
             backgroundColor: Colors.blue,
